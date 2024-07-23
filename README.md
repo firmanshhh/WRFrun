@@ -38,7 +38,7 @@ This repository aims to provide a streamlined process for downscaling CMIP6 data
 ## Data Access
 
 - Intermediate files for the MPI-ESM1-2-HR dataset can be accessed through the following link: [Download Intermediate Files](https://terabox.com/s/1u9iBMcHWD1uDFIm1USo5hg)
-- Geog Data files can be accessed through the following link: [Download Intermediate Files](https://terabox.com/s/1qEgdp-seflxi2fT_jo8Ksw)
+- Geog Data files can be accessed through the following link: [Download geog Files](https://terabox.com/s/1qEgdp-seflxi2fT_jo8Ksw)
 
 ## Usage
 
