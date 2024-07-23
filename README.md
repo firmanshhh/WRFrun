@@ -31,11 +31,9 @@ This repository aims to provide a streamlined process for downscaling CMIP6 data
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/your-repo.git
+   git clone https://github.com/firmanshhh/WRFrun.git
    cd your-repo
    ```
-
-2. Ensure all dependencies are installed and properly configured.
 
 ## Data Access
 
@@ -43,7 +41,7 @@ Intermediate files for the MPI-ESM1-2-HR dataset can be accessed through the fol
 
 ## Usage
 
-1. Prepare your environment and ensure all required software is installed.
+1. Prepare your WRF and WPS is installed.
 
 2. Download the necessary input data from the provided link and place it in the appropriate directory.
 
@@ -52,8 +50,18 @@ Intermediate files for the MPI-ESM1-2-HR dataset can be accessed through the fol
 4. Run WPS to preprocess the data:
 
    ```bash
+   export wrfdir=/home/wrf/WRF/WPS #change with the actual WPS directory
+   export wrfdir=/home/wrf/WRF/WPS #change with the actual WRF directory
+
+   rm wrfbdy* wrfinput* wrfout*
+   ln -sf $wrfdir/run/*.TBL .
+   ln -sf $wrfdir/run/ozone* .
+   ln -sf $wrfdir/run/RRTMG* .
+   ln -sf $wrfdir/run/CAM* .
+   ln -sf $wrfdir/run/*.exe .
+   ln -sf $wpsdir/*.exe .
+   
    ./geogrid.exe
-   ./ungrib.exe
    ./metgrid.exe
    ```
 
