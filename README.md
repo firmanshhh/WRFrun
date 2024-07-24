@@ -51,7 +51,7 @@ This repository aims to provide a streamlined process for downscaling CMIP6 data
 4. Run WPS to preprocess the data:
 
    ```bash
-   export wrfdir=/home/wrf/WRF/WPS #change with the actual WPS directory
+   export wrfdir=/home/wrf/WRF/WRF #change with the actual WPS directory
    export wpsdir=/home/wrf/WRF/WPS #change with the actual WRF directory
 
    rm wrfbdy* wrfinput* wrfout*
