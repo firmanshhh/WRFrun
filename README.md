@@ -52,7 +52,7 @@ This repository aims to provide a streamlined process for downscaling CMIP6 data
 
    ```bash
    export wrfdir=/home/wrf/WRF/WPS #change with the actual WPS directory
-   export wrfdir=/home/wrf/WRF/WPS #change with the actual WRF directory
+   export wpsdir=/home/wrf/WRF/WPS #change with the actual WRF directory
 
    rm wrfbdy* wrfinput* wrfout*
    ln -sf $wrfdir/run/*.TBL .
@@ -61,6 +61,8 @@ This repository aims to provide a streamlined process for downscaling CMIP6 data
    ln -sf $wrfdir/run/CAM* .
    ln -sf $wrfdir/run/*.exe .
    ln -sf $wpsdir/*.exe .
+   ln -sf $wpsdir/geogrid .
+   ln -sf $wpsdir/gmetgrid .
    
    ./geogrid.exe
    ./metgrid.exe
